@@ -6,7 +6,7 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "", type: 0}});
 });
 
-var prefix = "m."
+var prefix = "a."
 
 client.on('message', message => {
 	if (message.author === client.user) return;
