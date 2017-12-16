@@ -30,15 +30,8 @@ client.on('message', message => {
 		 message.channel.send(`XD`);
 	}
 });
-//Copy and paste from here to add a command, replace mimikkip with ur command and here goes ur reply to wut bot is going to say
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'mimikkip')) {
-	
-		 message.channel.send(`here goes ur reply`);
-		
-	}
-});
+
+
 //Important
 client.login(process.env.BOT_TOKEN);
 
