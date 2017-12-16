@@ -3,10 +3,10 @@ const client = new Discord.Client();
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
-	   client.user.setPresence({game: {name: "", type: 0}});
+	   client.user.setPresence({game: {name: "with Mew I a!help", type: 0}});
 });
 
-var prefix = "a."
+var prefix = "a!"
 
 client.on('message', message => {
 	if (message.author === client.user) return;
