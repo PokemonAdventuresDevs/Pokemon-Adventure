@@ -21,6 +21,12 @@ var answers = [
   "Did you know that The fight between Goku and Frieza took up a total of three and a half hours of screen time, making it the longest fight in anime history.",
   "Did you know that Goku's mother is a Saiyan known as Gine."
 ]
+var rdmimgs = [
+	  "http://38.media.tumblr.com/94e9f3d457a2916b99fd0cecc0793039/tumblr_n9e0clg7821s3bc1no1_500.gif",
+  "http://24.media.tumblr.com/887b48c8a385f038f3803b615f65b971/tumblr_mh26ip5Dfj1s3bc1no3_400.gif",
+  "https://media.giphy.com/media/nyiPOxRx7J3hK/giphy.gif"
+
+]
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
@@ -54,6 +60,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {
 			var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+		var randomimg = rdmimgs[Math.floor(Math.random() * rdmimgs.length)];
 	const embed = new Discord.RichEmbed()
   .setTitle("Forshadic #1")
   .setAuthor("Artie", "https://cdn.discordapp.com/avatars/310089392230498315/483a341d8a0fd9eef1908870ba922f40.jpg")
@@ -62,7 +69,7 @@ client.on('message', message => {
    */
   .setColor(0x7401DF)
   .setDescription(randomAnswer)
-  .setImage("https://cdn.discordapp.com/attachments/372491249221107714/380474283324866561/unknown.png")
+  .setImage(randomimg)
 .addField("Types:",
     "Psychic/Ice.")
 		.setFooter("Description by TSComega.")
@@ -71,22 +78,7 @@ client.on('message', message => {
 	
 	}
 });
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'ssj')) {
-	
-	
-const embed = new Discord.RichEmbed()
 
-  .setTitle("AAAAAAAAAAAAAAAAAAAAAAAAAH")
-
-  .setColor(0xF7FE2E)
-  .setImage("https://media.giphy.com/media/3o6fJ1DYT1w2mvZyE0/giphy.gif")
-
-
-  message.channel.send({embed});
-	}
-});
 //Important
 client.login(process.env.BOT_TOKEN);
 
