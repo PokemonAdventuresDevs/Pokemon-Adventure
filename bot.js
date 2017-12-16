@@ -71,7 +71,22 @@ client.on('message', message => {
 	
 	}
 });
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'ssj')) {
+	
+	
+const embed = new Discord.RichEmbed()
 
+  .setTitle("AAAAAAAAAAAAAAAAAAAAAAAAAH")
+
+  .setColor(0xF7FE2E)
+  .setImage("https://media.giphy.com/media/3o6fJ1DYT1w2mvZyE0/giphy.gif")
+
+
+  message.channel.send({embed});
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
