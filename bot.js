@@ -33,7 +33,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
-	message.channel.send(````Hey ${message.author.username} here's the command list:\n a!xd\n a!hello\n a!ping````);
+	message.channel.send(`Hey ${message.author.username} here's the command list:\n a!xd\n a!hello\n a!ping`);
 
 	}
 });
