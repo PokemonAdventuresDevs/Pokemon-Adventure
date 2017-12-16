@@ -54,25 +54,9 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test')) {
-			var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
-		var randomimg = imgs[Math.floor(Math.random() * answers.length)];
-		var randomimg = starters[Math.floor(Math.random() * starters.length)];
-	const embed = new Discord.RichEmbed()
-  .setTitle("Forshadic #1")
-  .setAuthor("Artie", "https://cdn.discordapp.com/avatars/310089392230498315/483a341d8a0fd9eef1908870ba922f40.jpg")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x7401DF)
-  .setDescription(randomAnswer)
-  .setImage(randomimg)
-.addField("Types:",
-    "Psychic/Ice.")
-		.setFooter("Description by TSComega.")
-  .setTimestamp()
-  message.channel.send({embed});
-	
+	if (message.content.startsWith(prefix + 'starter')) {
+	message.channel.send(`Rowlet Popplio Litten`);
+
 	}
 });
 
