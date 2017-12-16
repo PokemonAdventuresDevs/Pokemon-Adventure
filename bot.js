@@ -51,7 +51,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {
 			var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
-		var randomimg = rdmimgs[Math.floor(Math.random() * rdmimgs.length)];
+		var randomimg = rdmimgs[Math.floor(Math.random() * answers.length)];
 	const embed = new Discord.RichEmbed()
   .setTitle("Forshadic #1")
   .setAuthor("Artie", "https://cdn.discordapp.com/avatars/310089392230498315/483a341d8a0fd9eef1908870ba922f40.jpg")
