@@ -55,7 +55,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'starter')) {
-	message.channel.send(`**Choose your Starter:\n-Rowlet \n-Popplio \n-Litten**`);
+	message.channel.send(`**Choose your Starter:\n-Rowlet \n-Popplio \n-Litten** *a!choosestarter litten*`);
 
 	}
 });
@@ -73,7 +73,6 @@ client.on('message', message => {
   .setImage("http://rs152.pbsrc.com/albums/s168/Renamori/litten_sprite__animated__by_greyenna-da3t445_zpsphr5zfvh.gif~c200")
 .addField("Types:",
     "Fire.")
-		.setFooter("Description by Splitzblue.")
   .setTimestamp()
   message.channel.send({embed});
 	}
