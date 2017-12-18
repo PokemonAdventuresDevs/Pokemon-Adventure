@@ -59,7 +59,25 @@ client.on('message', message => {
 
 	}
 });
-
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'starter Litten')) {
+	
+		const embed = new Discord.RichEmbed()
+  .setTitle("Litten")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x7401DF)
+  .setDescription("Litten is a solitary Pokémon that does not typically display its emotions. While grooming, it collects fur inside its stomach. By setting the stored fur alight, it can spit fireballs that change based on how it coughs. Litten's fur produces flammable oils, and when it begins shedding, it burns all its fur in a blaze.")
+  .setImage("http://rs152.pbsrc.com/albums/s168/Renamori/litten_sprite__animated__by_greyenna-da3t445_zpsphr5zfvh.gif~c200")
+.addField("Types:",
+    "Fire.")
+		.setFooter("Description by Splitzblue.")
+  .setTimestamp()
+  message.channel.send({embed});
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
