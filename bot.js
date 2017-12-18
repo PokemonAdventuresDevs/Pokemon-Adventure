@@ -61,7 +61,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'choosestarter Litten')) {
+	if (message.content.startsWith(prefix + 'choosestarter litten')) {
 	
 		const embed = new Discord.RichEmbed()
   .setTitle("Litten")
