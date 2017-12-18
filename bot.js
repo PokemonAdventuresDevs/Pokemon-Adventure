@@ -33,9 +33,9 @@ client.on('message', message => {
 //Copy and paste from here to add a command, replace mimikkip with ur command and here goes ur reply to wut bot is going to say
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'mimikkip')) {
+	if (message.content.startsWith(prefix + 'starter')) {
 	
-		 message.channel.send(`here goes ur reply`);
+		 message.channel.send(`Choose your Starter: \N Rowlert Litten Popplio'))
 		
 	}
 });
