@@ -70,7 +70,7 @@ client.on('message', message => {
    */
   .setColor(0x7401DF)
   .setDescription("Litten is a solitary Pokémon that does not typically display its emotions. While grooming, it collects fur inside its stomach. By setting the stored fur alight, it can spit fireballs that change based on how it coughs. Litten's fur produces flammable oils, and when it begins shedding, it burns all its fur in a blaze.")
-  .setImage("http://rs152.pbsrc.com/albums/s168/Renamori/litten_sprite__animated__by_greyenna-da3t445_zpsphr5zfvh.gif~c200")
+  .setImage("https://lh5.googleusercontent.com/proxy/pNzBOjsCP10Wq__GchtyhT6FzyFe4tn1C-0YbRN17oG_404lfaXWUrwFxT_RVTB4vtcU6zxm6Gyrmj2DBSNfhPy2oZFPMyUn3Rh_EpdVirXDod9qYirhJ7jHBKom72C1tILvTPv-1Hs=w384-h384-nc")
 .addField("Types:",
     "Fire.")
   .setTimestamp()
