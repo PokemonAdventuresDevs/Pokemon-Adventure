@@ -55,7 +55,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'starter')) {
-	message.channel.send(`**Choose your Starter:\n -Rowlet**     *-a!choosestarter rowlet*\n **-Popplio**    *-a!choosestarter popplio*\n **-Litten**      *-a!choosestarter litten*`);
+	message.channel.send(message.author.toString() + `**Choose your Starter:\n -Rowlet**     *-a!choosestarter rowlet*\n **-Popplio**    *-a!choosestarter popplio*\n **-Litten**      *-a!choosestarter litten*`);
 
 	}
 });
