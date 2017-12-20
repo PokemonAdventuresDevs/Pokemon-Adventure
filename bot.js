@@ -97,6 +97,25 @@ client.on('message', message => {
 		message.channel.send(message.author.toString() + `, Do you want to take Rowlet with you?          *-a!accept      -a!deny*`);
 	}
 });
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'choosestarter popplio')) {
+	
+		const embed = new Discord.RichEmbed()
+  .setTitle("Popplio")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x7401DF)
+  .setDescription("Popplio is able to snort bubbles of water from its nose, which it uses as part of its battle strategy, and it can swim at 25 mph (40 km/h). On land, it uses the elasticity of its bubbles to perform acrobatic stunts and jumps.")
+  .setImage("https://vignette.wikia.nocookie.net/es.pokemon/images/1/12/Popplio_USUL.png/revision/latest/scale-to-width-down/350?cb=20170818204538")
+.addField("Types:",
+    "Water.")
+  .setTimestamp()
+  message.channel.send({embed});
+		message.channel.send(message.author.toString() + `, Do you want to take Popplio with you?          *-a!accept      -a!deny*`);
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
