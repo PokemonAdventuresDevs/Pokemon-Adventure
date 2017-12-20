@@ -127,7 +127,7 @@ message.channel.sendMessage('What tag would you like to see? This will await wil
 });
 	client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test {
+	if (message.content.startsWith(prefix + 'test` {
 	
 		 await message.channel.send(`Awaiting`);
 	    
