@@ -125,17 +125,7 @@ client.on('message', message => {
 message.channel.sendMessage('What tag would you like to see? This will await will be cancelled in 30 seconds. It will finish when you provide a message that goes through the filter the first time.')
 
 });
-	client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test' {
-	
-		 await message.channel.send(`Awaiting`);
-	    
-	    const msgs = await message.channel.awaitMessages(msg => {console.log(msg.content);
-		return msg.content.includes("Hi"):
-	}, {time: 5000});
-	await message.channel.send(`xd $(msgs.map(msg => msg.contemt).join("j")}`);
-	}
+
 
 //Important
 client.login(process.env.BOT_TOKEN);
