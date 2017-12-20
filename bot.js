@@ -75,7 +75,7 @@ client.on('message', message => {
     "Fire.")
   .setTimestamp()
   message.channel.send({embed});
-		message.channel.send(message.author.toString() + `, Do you want to take Litten with you?`);
+		message.channel.send(message.author.toString() + `, Do you want to take Litten with you?        *-a!accept      -a!deny*`);
 	}
 });
 //Important
