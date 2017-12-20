@@ -83,7 +83,7 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'choosestarter rowlet')) {
 	
 		const embed = new Discord.RichEmbed()
-  .setTitle("Rowlet)
+  .setTitle("Rowlet")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
