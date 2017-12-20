@@ -34,16 +34,13 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'hello')) {
-	
 		 message.channel.send(`Hello ${message.author.username}! :wave:`);
 		const collector = message.channel.createMessageCollector(m => m.content == 'y' && m.author.id == message.author.id || m.content == 'n' && m.author.id == message.author.id, { time: 15000 });	
-						message.reply("Successfully kicked " + getUserResolvable(args[0], message.guild.id).tag);
-						}
-					else if (m.content == "n")
-						{
-						message.reply("Cancelling.");
-							collector.stop();
+	message.reply("Successfully kicked " + getUserResolvable(args[0], message.guild.id).tag);
 	}
+	else if (m.content == "n")
+	message.reply("Cancelling.");
+collector.stop();
         });
 
 client.on('message', message => {
