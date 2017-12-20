@@ -78,6 +78,25 @@ client.on('message', message => {
 		message.channel.send(message.author.toString() + `, Do you want to take Litten with you?         *-a!accept      -a!deny*`);
 	}
 });
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'choosestarter rowlet')) {
+	
+		const embed = new Discord.RichEmbed()
+  .setTitle("Rowlet)
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x7401DF)
+  .setDescription("A nocturnal Pokémon, it stores energy during the day through photosynthesis. It approaches opponents by silently gliding, before unleashing a volley of kicks. This Pokémon is able to rotate its head almost 180 degrees, and has excellent night vision.")
+  .setImage("https://vignette.wikia.nocookie.net/pokemon/images/1/15/722Rowlet_SM_anime_2.png/revision/latest?cb=20170118065340")
+.addField("Types:",
+    "Grass/Flying.")
+  .setTimestamp()
+  message.channel.send({embed});
+		message.channel.send(message.author.toString() + `, Do you want to take Rowlet with you?          *-a!accept      -a!deny*`);
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
