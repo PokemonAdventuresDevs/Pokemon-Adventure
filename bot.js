@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const sql = require("sqlite");
-sql.open("./score.sqlite");
+
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
