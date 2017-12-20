@@ -43,8 +43,20 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'xd')) {
 	
 		 message.channel.send(`XD`);
-	}
+		.then(() => {
+  message.channel.awaitMessages(response => response.content === 'test', {
+    max: 1,
+    time: 30000,
+    errors: ['time'],
+  })
+  .then((collected) => {
+      message.channel.send(`The collected message was: ${collected.first().content}`);
+    })
+    .catch(() => {
+      message.channel.send('There was no collected message that passed the filter within the time limit!');
+    });
 });
+
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
