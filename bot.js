@@ -36,7 +36,7 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'hello')) {
 	
 		 message.channel.send(`Hello ${message.author.username}! :wave:`);
-		
+	}
         });
 
 client.on('message', message => {
