@@ -89,7 +89,7 @@ client.on('message', message => {
    */
   .setColor(0x7401DF)
   .setDescription("A nocturnal Pokémon, it stores energy during the day through photosynthesis. It approaches opponents by silently gliding, before unleashing a volley of kicks. This Pokémon is able to rotate its head almost 180 degrees, and has excellent night vision.")
-  .setImage("https://vignette.wikia.nocookie.net/pokemon/images/1/15/722Rowlet_SM_anime_2.png/revision/latest?cb=20170118065340")
+  .setImage("https://vignette.wikia.nocookie.net/es.pokemon/images/f/f3/Rowlet_USUL.png/revision/latest/scale-to-width-down/350?cb=20170818204435")
 .addField("Types:",
     "Grass/Flying.")
   .setTimestamp()
