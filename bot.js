@@ -122,17 +122,6 @@ client.on('message', message => {
 	}
 });
 
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'accept')) {
-	if(choosestarter = 1){
-	message.channel.send(message.author.toString() + `, You took Popplio with you.`);
-
-	}
-	else if { 
-		message.channel.send(message.author.toString() + `, You havent select an option`);
-	}}
-});
 //Important
 client.login(process.env.BOT_TOKEN);
 
