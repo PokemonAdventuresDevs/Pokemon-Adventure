@@ -51,6 +51,13 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'resetstartvar')) {
+	choosestarter = 0;
+
+	}
+});
+client.on('message', message => {
+	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'starter')) {
 	message.channel.send(message.author.toString() + `\n**Choose your Starter:\n -Rowlet**     *-a!choosestarter rowlet*\n **-Popplio**    *-a!choosestarter popplio*\n **-Litten**      *-a!choosestarter litten*`);
 
