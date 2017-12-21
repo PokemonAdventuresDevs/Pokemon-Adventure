@@ -6,7 +6,8 @@ client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "with Mew I a!help", type: 0}});
 });
-
+var choosestarter = 0
+var starter = 0
 var prefix = "a!"
 var starters = [
 	  "Rowlet",
