@@ -128,6 +128,9 @@ client.on('message', message => {
 	if(choosestarter = 1){
 	message.channel.send(message.author.toString() + `, You took Popplio with you.`);
 
+	}
+	else if { 
+		message.channel.send(message.author.toString() + `, You havent select an option`);
 	}}
 });
 //Important
