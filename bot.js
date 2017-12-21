@@ -125,10 +125,10 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'accept')) {
-		else if(choosestarter = 1){
+	
 	message.channel.send(message.author.toString() + `, You took Popplio with you.`);
 
-	}}
+	}
 });
 //Important
 client.login(process.env.BOT_TOKEN);
