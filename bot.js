@@ -9,11 +9,6 @@ client.on('ready',() => {
 var choosestarter = 0
 var starter = 0
 var prefix = "a!"
-var starters = [
-	  "Rowlet",
-	"Litten",
-	"Popplio"
-]
 var descriptions = [
 	  "Did you know that this bot was made because of a friend of Jorge called Luca because he told him he was a bot and that gave him an idea.",
   "Did you know that my favorite Pokemon is Zoroark",
@@ -116,6 +111,7 @@ client.on('message', message => {
   .setTimestamp()
   message.channel.send({embed});
 		message.channel.send(message.author.toString() + `, Do you want to take Popplio with you?          *-a!accept      -a!deny*`);
+		choosestarter = 1;
 	}
 });
 
